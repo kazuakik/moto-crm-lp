@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランディングページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ようこそ RRR へ</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">特徴</a></li>
+                <li><a href="#pricing">料金</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h2>最高のCRMソリューション</h2>
+        <p>ビジネスを次のレベルへ引き上げましょう。</p>
+        <a href="#signup" class="cta-button">今すぐ登録</a>
+    </section>
+    <section id="features">
+        <h2>特徴</h2>
+        <ul>
+            <li>使いやすいインターフェース</li>
+            <li>強力な分析ツール</li>
+            <li>カスタマイズ可能なダッシュボード</li>
+        </ul>
+    </section>
+    <section id="pricing">
+        <h2>料金</h2>
+        <p>さまざまなプランをご用意しています。</p>
+        <ul>
+            <li>基本プラン: ¥1000/月</li>
+            <li>プロプラン: ¥3000/月</li>
+            <li>ビジネスプラン: ¥5000/月</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 RRR. All rights reserved.</p>
+    </footer>
+</body>
+</html>
