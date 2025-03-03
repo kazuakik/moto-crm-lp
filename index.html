@@ -1,58 +1,175 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ランディングページ</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>バイク屋さんの顧客管理システム - RRR(トリプルR)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+
+        header {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        header>.title {
+            font-weight: bold;
+        }
+
+        header>.title-sub {
+            font-size: small;
+        }
+
+        .hero {
+            height: 500px;
+
+            background-image: url('img/img-tools-s.jpg');
+            background-size: cover;
+        }
+
+        .innerbox {
+            backdrop-filter: blur(2px);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 4rem;
+        }
+        .logo>rt {
+            font-size: 0.7rem;
+        }
+
+        .card {
+            padding: 2rem;
+            margin: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            max-width: 500px;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img{
+            width: 80px;
+            display: block;
+            height: auto;
+            margin: 0 auto 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #0288d1;
+            color: #fff;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>ようこそ RRR へ</h1>
-        <nav>
-            <ul>
-                <li><a href="#features">特徴</a></li>
-                <li><a href="#pricing">料金</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <p class="title">バイク屋さんの顧客管理システム - RRR</p>
+        <p class="title-sub">Recovering for Relationship with Rider</p>
     </header>
-    <section id="hero">
-        <h2>最高のCRMソリューション</h2>
-        <p>ビジネスを次のレベルへ引き上げましょう。</p>
-        <a href="#signup" class="cta-button">今すぐ登録</a>
+    <section id="about" class="hero">
+        <div class="innerbox">
+            <h1>バイク屋さんの顧客管理システム<br><ruby class="logo">RRR<rt>トリプルR</rt></ruby></h1>
+            <p>バイク屋さんの顧客情報管理を簡単に、効率的に。</p>
+        </div>
     </section>
-    <section id="features">
-        <h2>特徴</h2>
+    <section id="why" class="card">
+        <img src="img/ng.png" alt="NG">
+        <h2>なぜRRRが必要か？</h2>
         <ul>
-            <li>使いやすいインターフェース</li>
-            <li>強力な分析ツール</li>
-            <li>カスタマイズ可能なダッシュボード</li>
+            <li>手書き管理が主流で、情報の検索や管理に時間がかかる</li>
+            <li>点検時期の通知漏れがあり、顧客との関係維持が難しい</li>
+            <li>車両や修理履歴を適切に管理できず、対応の遅れが発生</li>
         </ul>
     </section>
-    <section id="pricing">
-        <h2>料金</h2>
-        <p>さまざまなプランをご用意しています。</p>
+    </section>
+    <section id="solution" class="card">
+        <img src="img/fix.png" alt="解決">
+        <h2>RRRなら解決！ </h2>
         <ul>
-            <li>基本プラン: ¥1000/月</li>
-            <li>プロプラン: ¥3000/月</li>
-            <li>ビジネスプラン: ¥5000/月</li>
+            <li><strong>顧客と車両の管理に特化し、操作が簡単</strong>
+                <ul>
+                    <li>カテゴリーを自由に設定し、顧客を細かく分類</li>
+                    <li>逆選択で顧客を絞り込み、ターゲットを明確化</li>
+                </ul>
+            </li>
+            <li><strong>点検時期の管理と通知機能</strong>
+                <ul>
+                    <li>車両ごとに点検時期を設定し、管理を簡単に</li>
+                    <li>メールやネームシール印刷で顧客にお知らせ</li>
+                    <li>シールは途中からでも印刷可能で、無駄を削減</li>
+                </ul>
+            </li>
+            <li><strong>在庫車両・買取・古物台帳と連携</strong>
+                <ul>
+                    <li>在庫車両の管理に加え、下取り・買取情報を記録</li>
+                    <li>古物台帳と連携し、法令順守をサポート</li>
+                </ul>
+            </li>
+            <li><strong>伝票作成とパーツ管理の効率化</strong>
+                <ul>
+                    <li>主要書類のフォーマットを用意し、PC入力を簡単に</li>
+                    <li>メーカーのパーツデータを伝票に一括入力可能</li>
+                </ul>
+            </li>
+            <li><strong>部品代の自動設定＆価格調整</strong>
+                <ul>
+                    <li>割引・割増の自動設定で、計算の手間を削減</li>
+                </ul>
+            </li>
         </ul>
     </section>
-    <section id="contact">
+    <section id="features" class="card">
+        <h2>主な機能</h2>
+        <ul>
+            <li>顧客情報の管理</li>
+            <li>車両情報の管理</li>
+            <li>古物台帳</li>
+            <li>伝票作成</li>
+            <ul>
+                <li>用品作業伝票</li>
+                <li>車両注文書</li>
+                <li>点検整備記録簿</li>
+                <li>領収書</li>
+                <li>委任状</li>
+                <li>譲渡(販売)証明書</li>
+                <li>宛名シート</li>
+            </ul>
+        </ul>
+    </section>
+    <section id="contact" class="card">
         <h2>お問い合わせ</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">名前:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">メールアドレス:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">メッセージ:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">送信</button>
-        </form>
+        <p>詳細についてはお問い合わせください。</p>
     </section>
     <footer>
-        <p>&copy; 2023 RRR. All rights reserved.</p>
+        <p>&copy; 2023 RRR. 無断転載を禁じます。</p>
     </footer>
 </body>
+
 </html>
