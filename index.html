@@ -5,87 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>バイク屋さんの顧客管理システム - RRR(トリプルR)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f6f6f6;
-        }
-
-        header {
-            padding: 1rem;
-            text-align: left;
-        }
-
-        header>.title {
-            font-weight: bold;
-        }
-
-        header>.title-sub {
-            font-size: small;
-        }
-
-        .hero {
-            height: 500px;
-
-            background-image: url('img/img-tools-s.jpg');
-            background-size: cover;
-        }
-
-        .innerbox {
-            backdrop-filter: blur(2px);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-            width: 100%;
-            height: 100%;
-        }
-
-        .logo {
-            font-size: 4rem;
-        }
-        .logo>rt {
-            font-size: 0.7rem;
-        }
-
-        .card {
-            padding: 2rem;
-            margin: 1rem;
-            margin-left: auto;
-            margin-right: auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-            max-width: 500px;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card img{
-            width: 80px;
-            display: block;
-            height: auto;
-            margin: 0 auto 0 auto;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #0288d1;
-            color: #fff;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
@@ -97,6 +19,14 @@
         <div class="innerbox">
             <h1>バイク屋さんの顧客管理システム<br><ruby class="logo">RRR<rt>トリプルR</rt></ruby></h1>
             <p>バイク屋さんの顧客情報管理を簡単に、効率的に。</p>
+            <div>
+                <a href="#contact" class="btn">お問い合わせ</a>
+            </div>
+        </div>
+    </section>
+    <section id="banner">
+        <div>
+            <img src="img/banner_rrr.png" alt="RRR">
         </div>
     </section>
     <section id="why" class="card">
@@ -107,7 +37,6 @@
             <li>点検時期の通知漏れがあり、顧客との関係維持が難しい</li>
             <li>車両や修理履歴を適切に管理できず、対応の遅れが発生</li>
         </ul>
-    </section>
     </section>
     <section id="solution" class="card">
         <img src="img/fix.png" alt="解決">
@@ -163,13 +92,35 @@
             </ul>
         </ul>
     </section>
+
+    <section id="screenshot" class="card">
+        <h2>スクリーンショット</h2>
+        <div class="image-gallery">
+            <img src="img/sc-print-3.png" alt="" class="thumbnail" onclick="openModal(this)">
+            <img src="img/sc-print-1.png" alt="" class="thumbnail" onclick="openModal(this)">
+            <img src="img/sc-print-2.png" alt="" class="thumbnail" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <div id="myModal" class="modal" onclick="closeModal(event)">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
     <section id="contact" class="card">
         <h2>お問い合わせ</h2>
-        <p>詳細についてはお問い合わせください。</p>
+        <p>下記までお問い合わせ下さい。</p>
+        <div class="contact-info">
+            千葉オートバイ事業協同組合　事務局<br>
+            【ＴＥＬ】０４７－４２６－５５０２<br>
+            【ＦＡＸ】０４７－４２２－５５７０<br>
+            【メール】<a href="mailto:cmc@e-chiba.jp">cmc@e-chiba.jp</a>
+        </div>
     </section>
     <footer>
         <p>&copy; 2023 RRR. 無断転載を禁じます。</p>
     </footer>
+
 </body>
 
 </html>
