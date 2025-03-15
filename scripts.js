@@ -1,6 +1,5 @@
 function openModal(element) {
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById("img01").src = element.src;
+    window.open(element.src, '_blank');
 }
 
 function closeModal(event) {
