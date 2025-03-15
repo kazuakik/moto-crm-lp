@@ -176,3 +176,22 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.price-item {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0288d1;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
